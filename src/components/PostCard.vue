@@ -1,5 +1,11 @@
 <template>
-  <div class="card">{{ content }}</div>
+  <div class="card">
+    <h2>
+      <slot name="cardTitle">Fallback Title</slot>
+    </h2>
+    <slot>Fallback content</slot>
+    <slot name="tombol">Fallback Title</slot>
+  </div>
 </template>
 
 <script>

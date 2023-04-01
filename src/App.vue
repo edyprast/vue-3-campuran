@@ -1,8 +1,11 @@
 <template>
-  <div id="app">
-    <PostCard content="Post Card 1" />
-    <PostCard content="Post Card 2" />
-  </div>
+  <post-card>
+    <template v-slot:cardTitle>Ini Gambar</template>
+    <template v-slot:default>
+      <img src="https://picsum.photos/200" />
+    </template>
+    <template v-slot:tombol> <button>Read more...</button></template>
+  </post-card>
 </template>
 
 <script>
