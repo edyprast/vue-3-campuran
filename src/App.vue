@@ -1,11 +1,11 @@
 <template>
-  <post-card>
+  <PostCard>
     <template v-slot:cardTitle>Ini Gambar</template>
     <template v-slot:default>
       <img src="https://picsum.photos/200" />
     </template>
     <template v-slot:tombol> <button>Read more...</button></template>
-  </post-card>
+  </PostCard>
 </template>
 
 <script>
