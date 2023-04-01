@@ -14,7 +14,7 @@ export default {
 };
 </script>
 
-<style>
+<style scope>
 .card {
   max-width: 250px;
   text-align: center;

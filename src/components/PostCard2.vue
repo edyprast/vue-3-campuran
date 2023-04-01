@@ -1,16 +1,18 @@
 <template>
   <div class="card">
-    <slot name="title" :pTitle="postTitle"></slot>
+    <slot name="title" :pTitle="postTitle">Hello</slot>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['content'],
+  data() {
+    return { postTitle: 'Post Title' };
+  },
 };
 </script>
 
-<style>
+<style scope>
 .card {
   max-width: 250px;
   text-align: center;
