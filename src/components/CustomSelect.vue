@@ -1,5 +1,5 @@
 <template>
-  <select v-model="country">
+  <select @change="handleChange">
     <option value="">Please select your Coutry</option>
     <option value="US">United States</option>
     <option value="UK">United Kingdom</option>
@@ -9,6 +9,10 @@
 
 <script>
 export default {
-  props: ['name', 'lastName', 'alamat'],
+  methods: {
+    handleChange(event) {
+      this.$emit('berubah', event.target.value.toUpperCase());
+    },
+  },
 };
 </script>
